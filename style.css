@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    border: 1px solid black;
+}
+
+header{
+    height: 200px;
+    background-color: red;
+}
+
+.header-top{
+    height: 100px;
+    background-color: #F5F8FA;
+}
+
+.header-top-left{
+
+}
+
+.header-bot{
+    height: 100px;
+    background-color: grey;
+}
+
+.widget{
+    height: 100px;
+    background-color: #425B76;
+}
