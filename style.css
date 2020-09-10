@@ -18,7 +18,6 @@ body{
 
 header{
     height: 200px;
-    background-color: red;
 }
 
 .header-top{
@@ -36,9 +35,19 @@ header{
     float: left;
 }
 
+.header-top-left .language a{
+    text-decoration: none;
+    color: #33475B;
+}
+
 .header-top-left .contacts{
     margin-left: 10px;
     float: left;
+}
+
+.header-top-left .contacts a{
+    text-decoration: none;
+    color: #33475B;
 }
 
 .header-top-right{
@@ -58,7 +67,6 @@ header{
     padding: 10px 20px;
     border-radius: 3px;
     border-color: #FF7A59;
-    color: #FF7A59;
     background-color: white
 
 }
@@ -68,21 +76,58 @@ header{
     padding: 10px 20px;
     border-radius: 3px;
     border-color: #FF7A59;
-    color: white;
     background-color: #FF7A59;
+}
 
+#login-button{
+    text-decoration: none;
+    color: #FF7A59;
+}
 
+#offer-button{
+    color: white;
+    text-decoration: none;
 }
                         /* fine header top */
 .header-bot{
     height: 100px;
-    background-color: grey;
 }
 
+.header-bot-left{
+    height: 100%;
+    width: 50%;
+    float: left;
+
+}
 .header-bot-right{
-    
+    height: 100%;
+    width: 50%;
+    text-align: right;
+    float: left;
 }
 
+.header-bot-right ul li{
+    line-height: 100px;
+    margin: 0 10px 0 10px;
+    display: inline-block;
+    text-align: right;
+    list-style-type: none;
+}
+
+.menu-option{
+    text-decoration: none;
+    color: #33475B;
+    font-weight: bold;
+}
+
+.logohubspot{
+    line-height: 100px;
+}
+
+.logohubspot i{
+    font-size: 50px;
+    padding-top: 20px;
+}
 .widget{
     height: 100px;
     background-color: #425B76;
