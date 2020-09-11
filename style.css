@@ -66,7 +66,7 @@ header{
     margin: 0 10px;
     padding: 10px 20px;
     border-radius: 3px;
-    border-color: #FF7A59;
+    border: 1px solid #FF7A59;
     background-color: white
 
 }
@@ -75,7 +75,7 @@ header{
     margin: 0 10px;
     padding: 10px 20px;
     border-radius: 3px;
-    border-color: #FF7A59;
+    border: 1px solid #FF7A59;
     background-color: #FF7A59;
 }
 
@@ -137,21 +137,35 @@ header{
 .widget{
     height: 100px;
     background-color: #425B76;
-    position: relative;
 }
 .testo-widget{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+    padding: 25px 0;
     line-height: 1.5;
+    color: white;
 }
-
+                            /* inizio section 1 */
 .section1{
     height: 600px;
-    background-color: #FFF2EE;
+    background-color: #4FC3C7;
     position: relative;
+}
+
+.section1-left{
+    height: 100%;
+    width: 50%;
+    float: left;
+
+}
+
+.section1-right{
+    height: 100%;
+    width: 50%;
+    padding: 92px 0;
+    float: left;
+}
+
+.section1-right img{
+    width: 100%
 }
 
 .section1-text{
@@ -173,12 +187,12 @@ header{
 }
 
 .section1-text button:only-of-type{
-    border-radius: 3px;
     margin-bottom: 20px;
     padding: 20px;
     color: white;
     font-size: 15px;
-    border-color: #FF7A59;
+    border-radius: 3px;
+    border: 1px solid #FF7A59;
     background-color: #FF7A59;
 }
                                     /* inizio section 2 */
@@ -191,14 +205,80 @@ header{
 .row-top{
     margin-top: 30px;
 }
-.box{
+
+.box-special{
     height: 400px;
     margin: 10px;
     padding: 10px;
     width: calc(100% / 3 - 20px);
     background-color: white;
     float: left;
+
+}
+
+.box-special h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.box-special p{
+    line-height: 2;
+}
+
+
+.box{
+    height: 400px;
+    margin: 10px;
+    padding: 20px;
+    width: calc(100% / 3 - 20px);
+    background-color: white;
+    float: left;
 }
 
 .box h2{
-    margin-bottom: 20px;
+    font-size: 20px;
+    margin:20px 0;
+}
+
+.box > h2 i{
+    margin-right: 3px;
+    color: #FF7A59;
+}
+
+.box-text{
+    padding-bottom: 20px;
+    border-bottom: 2px solid #F5F8FA;
+    font-size: 14px;
+    line-height: 2;
+}
+.box h3{
+    text-transform: uppercase;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.box span{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.box span i{
+    margin-right: 5px;
+    color: #FF7A59;
+}
+
+.button{
+    text-align: center;
+}
+
+.button button{
+    padding: 15px 70px;
+    border-radius: 3px;
+    border: 1px solid #FF7A59;
+    background-color: #FF7A59;
+}
+
+.button button a{
+    color: white;
+    text-decoration: none;
+}
