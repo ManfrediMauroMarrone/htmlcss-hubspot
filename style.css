@@ -12,16 +12,21 @@ body{
     width: 1200px;
     height: 100%;
     margin: auto;
-    padding: 0 10px;
     border: 1px solid black;
 }
 
+.container::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
 header{
-    height: 200px;
+    /* height: 200px; */
 }
 
 .header-top{
-    height: 100px;
+    /* height: 100px; */
     background-color: #F5F8FA;
 }
 
@@ -281,4 +286,39 @@ header{
 .button button a{
     color: white;
     text-decoration: none;
+}
+                                /* inizio section 3 */
+.section3{
+    color: white;
+    background-image: linear-gradient(to top right, #01A5BD, #00BCA6);
+}
+
+#top-part{
+    width: 600px;
+    margin: 130px auto 50px auto;
+    text-align: center;
+}
+
+#top-part h2{
+    font-size: 30px;
+}
+
+#top-part p{
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    line-height: 2;
+}
+
+#bottom-part{
+    height: 500px;
+    background-color: red;
+}
+
+.square{
+    height: 250px;
+    width: 300px;
+    background-color: blue;
+    border: 1px solid white;
+    float: left;
 }
