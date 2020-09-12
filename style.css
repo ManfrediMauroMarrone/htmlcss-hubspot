@@ -12,7 +12,7 @@ body{
     width: 1200px;
     height: 100%;
     margin: auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .container::after{
@@ -203,12 +203,11 @@ header{
                                     /* inizio section 2 */
 
 .section2{
-    height: 900px;
     background-color: #F5F8FA;
 }
 
-.row-top{
-    margin-top: 30px;
+.container.section2{
+    padding: 100px 0 100px 0;
 }
 
 .box-special{
@@ -216,7 +215,6 @@ header{
     margin: 10px;
     padding: 10px;
     width: calc(100% / 3 - 20px);
-    background-color: white;
     float: left;
 
 }
@@ -232,7 +230,6 @@ header{
 
 
 .box{
-    height: 400px;
     margin: 10px;
     padding: 20px;
     width: calc(100% / 3 - 20px);
@@ -279,6 +276,7 @@ header{
 .button button{
     padding: 15px 70px;
     border-radius: 3px;
+    margin: 30px 0 40px 0;
     border: 1px solid #FF7A59;
     background-color: #FF7A59;
 }
@@ -290,12 +288,17 @@ header{
                                 /* inizio section 3 */
 .section3{
     color: white;
-    background-image: linear-gradient(to top right, #01A5BD, #00BCA6);
+    background-color: #00B1B0;
 }
 
+.container.section3{
+    padding: 100px 0 100px 0;
+}
 #top-part{
     width: 600px;
-    margin: 130px auto 50px auto;
+    margin: auto;
+    /* margin: 130px auto 50px auto; */
+    /* padding-top: 130px; */
     text-align: center;
 }
 
@@ -306,19 +309,73 @@ header{
 #top-part p{
     display: block;
     text-align: center;
-    margin-top: 30px;
+    margin: 30px 0 50px 0;
     line-height: 2;
 }
 
 #bottom-part{
     height: 500px;
-    background-color: red;
 }
 
 .square{
     height: 250px;
     width: 300px;
-    background-color: blue;
-    border: 1px solid white;
+    padding: 20px;
     float: left;
+    text-align: center;
+}
+
+.square.first{
+    border-bottom: 1px solid white;
+}
+.square.second{
+    border-right:1px solid white;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.square.third{
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.square.fourth{
+    border-bottom: 1px solid white;
+}
+
+.square.fifth{
+    border-right: 1px solid white;
+}
+
+.square.sixth{
+    border-right: 1px solid white;
+}
+
+.square.seventh{
+    border-right: 1px solid white;
+}
+#logo{
+    font-size: 40px;
+}
+#logo span{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.mid-text{
+    height: 50px;
+    margin-top: 30px;
+    font-size: 50px;
+
+}
+.mid-text span{
+}
+
+.mid-text i{
+    font-size: 12px;
+}
+
+
+.bottom-text{
+    margin-top: 30px;
 }
