@@ -143,7 +143,6 @@ header{
 }
                             /* inizio widget */
 .widget{
-    height: 100px;
     background-color: #425B76;
 }
 .testo-widget{
@@ -153,22 +152,21 @@ header{
 }
                             /* inizio section 1 */
 .section1{
-    height: 600px;
+    padding-top: 50px;
     background-color: #4FC3C7;
-    position: relative;
+}
+.section1::after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .section1-left{
-    height: 100%;
     width: 50%;
     float: left;
-
 }
-
 .section1-right{
-    height: 100%;
     width: 50%;
-    padding: 92px 0;
     float: left;
 }
 
@@ -177,11 +175,8 @@ header{
 }
 
 .section1-text{
-    width: 400px;
+    width: 50%;
     color: #425B76;
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
 }
 
 .section1-text > h1{
@@ -214,7 +209,6 @@ header{
 }
 
 .box-special{
-    height: 400px;
     margin: 10px;
     padding: 10px;
     width: calc(100% / 3 - 20px);
@@ -314,12 +308,7 @@ header{
     line-height: 2;
 }
 
-#bottom-part{
-    height: 500px;
-}
-
 .square{
-    height: 250px;
     width: 300px;
     padding: 20px;
     float: left;
@@ -365,28 +354,34 @@ header{
 }
 
 .mid-text{
-    height: 50px;
     font-size: 50px;
     display: block;
 
 }
+
 
 .bottom-text{
     margin-top: 30px;
 }
                             /* inizio section 4 */
 .section4{
-    height: 800px;
+    padding: 50px 0;
 }
 
+
 .section4-top{
-    height: 300px;
     background-color: white;
+}
+
+.section4-top::after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .section4-top-left{
     height: 100%;
-    width: 30%;
+    width: 50%;
     padding: 85px 0;
     float: left;
 }
@@ -426,16 +421,19 @@ header{
     float: left;
 }
 
-.section4-bot-left-header{
+.section4-bot-left h2{
     color: #33475B;
+    font-size: 30px;
 }
 
-.section4-bot-left-header h2{
+
+ .section4-bot-left-header h2{
     font-size: 30px;
 }
 
 .section4-bot-left p:first-of-type{
     margin:30px 0;
+    font-size: 18px;
 }
 
 .section4-bot-left button{
@@ -449,24 +447,25 @@ header{
 
 .section4-bot-left p:last-of-type{
     margin-top: 30px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
+.section4-bot-left p:last-of-type{
+    margin-top: 30px;
+    font-size: 14px;
+} */
+
 .section4-bot-right{
+    width: 50%;
     float: left;
 }
 
-.section4-bot-right-img{
-    width: 350px;
-    margin-left: 240px;
+.section4-bot-right img{
+    margin-left: 200px;
 }
 
-.section4-bot-right-img img{
-    width: 100%;
-}
                             /* inizio footer */
 footer{
-    /* height: 1000px; */
     background-color: #33475B;
 }
 
@@ -479,7 +478,6 @@ footer{
 .list{
     float: left;
     width: 300px;
-    height: 300px;
 
 }
 
@@ -574,7 +572,6 @@ footer{
 }
 
 .footer-row-bot-down-right{
-    height: 100px;
     width: 50%;
     padding-top: 20px;
     float: left;
