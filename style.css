@@ -21,11 +21,12 @@ body{
 }
 
 header{
-    /* height: 200px; */
+
 }
 
 .header-top{
-    /* height: 100px; */
+    width: 100%;
+    position: fixed;
     background-color: #F5F8FA;
 }
 
@@ -94,17 +95,20 @@ header{
 }
                         /* fine header top */
 .header-bot{
-    height: 100px;
+    padding-top: 100px;
+}
+.header-bot::after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .header-bot-left{
-    height: 100%;
     width: 50%;
     float: left;
 
 }
 .header-bot-right{
-    height: 100%;
     width: 50%;
     text-align: right;
     float: left;
@@ -354,6 +358,7 @@ header{
 #logo{
     font-size: 40px;
 }
+
 #logo span{
     font-size: 18px;
     text-transform: uppercase;
@@ -361,17 +366,10 @@ header{
 
 .mid-text{
     height: 50px;
-    margin-top: 30px;
     font-size: 50px;
+    display: block;
 
 }
-.mid-text span{
-}
-
-.mid-text i{
-    font-size: 12px;
-}
-
 
 .bottom-text{
     margin-top: 30px;
@@ -468,22 +466,19 @@ header{
 }
                             /* inizio footer */
 footer{
-    height: 500px;
+    /* height: 1000px; */
     background-color: #33475B;
 }
 
 
-footer::after{
+.footer-row-top{
     content: "";
     display: table;
     clear: both;
 }
-
-.footer-row-top{
-}
 .list{
     float: left;
-    width: calc(100%/4);
+    width: 300px;
     height: 300px;
 
 }
@@ -530,6 +525,64 @@ footer::after{
 
 .contacts-icon i{
     font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-row-bot-up{
+    padding-bottom:
+}
+
+.language-selection ul{
+    padding: 40px 0;
+    border-bottom: 1px solid white;
+    text-align: center;
+    list-style-type: none;
+}
+
+.language-selection li{
+    padding: 0 10px;
+    display: inline-block;
+}
+
+.language-selection li a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer-row-bot-down{
+    width: 100%;
+}
+
+.footer-row-bot-down{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer-row-bot-down small{
+    padding-top: 20px;
+    display: block;
+    color: white;
+}
+
+.footer-row-bot-down-left{
+    padding-top: 20px;
+    width: 50%;
+    float: left;
+}
+
+.footer-row-bot-down-right{
+    height: 100px;
+    width: 50%;
+    padding-top: 20px;
+    float: left;
+    text-align: right;
+}
+
+.footer-row-bot-down-right a{
+    margin: 0 10px;
     text-decoration: none;
     color: white;
 }
