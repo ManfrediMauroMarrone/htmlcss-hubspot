@@ -28,27 +28,50 @@ header{
     width: 100%;
     position: fixed;
     background-color: #F5F8FA;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #687C91;
 }
 
 .header-top-left{
     width: 50%;
-    line-height: 100px;
+    padding-top: 42px;
     float: left;
 }
 
 .header-top-left .language{
-    float: left;
+    display: inline-block;
+    position: relative;
 }
 
 .header-top-left .language a{
     text-decoration: none;
     color: #33475B;
 }
+.dropdown{
+    display: none;
+    width: 85.17px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border: 1px solid #687C91;
+    box-shadow: -3px 10px 5px 0px rgba(0,0,0,0.5);
+    background-color: white;
+}
+
+.dropdown a{
+    display: block;
+    padding: 10px 0 10px 0;
+}
+
+.dropdown a:hover{
+    background-color: rgba(207,251,245,0.5);
+}
+.language:hover .dropdown{
+    display: block;
+}
 
 .header-top-left .contacts{
     margin-left: 10px;
-    float: left;
+    display: inline-block;
 }
 
 .header-top-left .contacts a{
@@ -613,6 +636,18 @@ footer{
     text-align: right;
 }
 
+.chat-logo{
+    width: 50px;
+    position: absolute;
+    left: 39%;
+    top: -15%;
+    z-index: 1;
+
+}
+
+.chat-logo img{
+    width: 100%;
+}
 .message{
     width: 250px;
     margin-right: 10px;
