@@ -6,6 +6,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    position: relative;
 }
 
 .container{
@@ -21,13 +22,13 @@ body{
 }
 
 header{
-
 }
 
 .header-top{
     width: 100%;
     position: fixed;
     background-color: #F5F8FA;
+    border-bottom: 1px solid grey;
 }
 
 .header-top-left{
@@ -85,6 +86,8 @@ header{
 }
 
 #login-button{
+    height: 36.53;
+    display: inline-block;
     text-decoration: none;
     color: #FF7A59;
 }
@@ -284,11 +287,12 @@ header{
 }
                                 /* inizio section 3 */
 .section3{
-    color: white;
-    background-color: #00B1B0;
+    background: rgb(0,29,36);
+    background: linear-gradient(45deg, #00A6BC, #00BCA6);
 }
 
-.container.section3{
+
+.section3 > .container{
     padding: 100px 0 100px 0;
 }
 #top-part{
@@ -308,61 +312,79 @@ header{
     line-height: 2;
 }
 
+#bottom-part::after{
+    content: "";
+    display: table;
+    clear: both;
+}
 .square{
-    width: 300px;
-    padding: 20px;
+    width: calc(100% / 4);
+    padding: 30px 0;
     float: left;
     text-align: center;
 }
-
-.square.first{
-    border-bottom: 1px solid white;
-}
-.square.second{
-    border-right:1px solid white;
-    border-bottom: 1px solid white;
-    border-left: 1px solid white;
-}
-
-.square.third{
-    border-right: 1px solid white;
-    border-bottom: 1px solid white;
-}
-
-.square.fourth{
-    border-bottom: 1px solid white;
-}
-
-.square.fifth{
-    border-right: 1px solid white;
-}
-
-.square.sixth{
-    border-right: 1px solid white;
-}
-
-.square.seventh{
-    border-right: 1px solid white;
-}
-#logo{
-    font-size: 40px;
-}
-
-#logo span{
-    font-size: 18px;
-    text-transform: uppercase;
+.icon{
+    font-size: 30px;
 }
 
 .mid-text{
-    font-size: 50px;
-    display: block;
+    position: relative;
+}
+.mid-text h3{
+    font-size: 45px;
+}
+.mid-text h4{
+    font-size: 45px;
+}
 
+.mid-text h3::after{
+    content: "+";
+    font-size: 14px;
+    position: absolute;
+    bottom: 35%;
+}
+
+.square p{
+    margin-top: 10px;
+}
+
+.square span{
+    font-size: 20px;
+}
+
+#user-groups{
+    border-right: 1px solid white;
+}
+
+#visits{
+    border-right: 1px solid white;
+}
+
+#professionals{
+    border-right: 1px solid white;
+}
+#integrations{
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+}
+
+#languages{
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+}
+
+#followers{
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+}
+
+#customers{
+    border-top: 1px solid white;
 }
 
 
-.bottom-text{
-    margin-top: 30px;
-}
+
+
                             /* inizio section 4 */
 .section4{
     padding: 50px 0;
@@ -581,5 +603,46 @@ footer{
 .footer-row-bot-down-right a{
     margin: 0 10px;
     text-decoration: none;
+    color: white;
+}
+
+.chat{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+}
+
+.message{
+    width: 250px;
+    margin-right: 10px;
+    border-radius: 3px;
+    position: relative;
+    box-shadow: -3px 10px 5px 0px rgba(0,0,0,0.5);
+    text-align: left;
+    background-color: white
+}
+
+#closing-button{
+    position: absolute;
+    right: 10px;;
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+}
+.message p{
+    padding: 35px 0 35px 10px;
+}
+
+.button{
+    text-align: right;
+}
+.button i{
+    margin: 10px;
+    padding: 15px;
+    font-size: 30px;
+    border-radius: 50%;
+    background-color: #425B76;
+    box-shadow: -3px 10px 5px 0px rgba(0,0,0,0.5);
     color: white;
 }
